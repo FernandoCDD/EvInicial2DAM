@@ -18,6 +18,7 @@ public class Batalla {
 			nuevaVidaP1 -= golpe;
 			
 			if (nuevaVidaP1 < 30) {
+				
 				p1.buscarBotiquin();
 				nuevaVidaP1 = p1.getPuntosVida();
 				System.out.println("El jugador 1 se ha tomado una poción, +10 de vida. "+nuevaVidaP1+"PV");

@@ -19,6 +19,7 @@ public class Personaje implements IHabilidad{
 		this.nombre = nombre;
 		this.puntosVida = 100;
 		this.puntuaje = 0;
+		this.elementosMochila = 10;
 	}
 
 	public String getNombre() {
