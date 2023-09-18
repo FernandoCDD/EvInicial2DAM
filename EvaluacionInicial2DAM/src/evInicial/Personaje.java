@@ -92,10 +92,8 @@ public class Personaje implements IHabilidad{
 	
 	public int buscarBotiquin () {
 		
-		String botiquin = null;
-		
 		for (int i = 0; i < mochila.length; i++) {
-			if (this.mochila[i].equalsIgnoreCase(botiquin)) {
+			if (this.mochila[i].equalsIgnoreCase("botiquin")) {
 				this.puntosVida = this.puntosVida + 10;
 				
 			}else

@@ -13,6 +13,8 @@ public class Principal {
 		
 		mochila = new String [limiteMochila];
 		
+		mochila [0] = new String ("botiquin");
+		
 		Batalla.generarBatalla(new Personaje("Sebastián"), new Personaje("Fernando"));
 		
 	}
