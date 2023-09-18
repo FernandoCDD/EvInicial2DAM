@@ -4,7 +4,7 @@ public class Personaje implements IHabilidad{
 
 	private String nombre;
 	private int puntosVida;
-	private int puntuaje;
+	private int puntuacion;
 	private int elementosMochila;
 	private String [] mochila;
 	private int puntosFuerza;
@@ -18,8 +18,8 @@ public class Personaje implements IHabilidad{
 		super();
 		this.nombre = nombre;
 		this.puntosVida = 100;
-		this.puntuaje = 0;
-		this.elementosMochila = 10;
+		this.puntuacion = 0;
+		this.mochila = new String [10];
 	}
 
 	public String getNombre() {
@@ -43,11 +43,11 @@ public class Personaje implements IHabilidad{
 
 
 	public int getPuntuaje() {
-		return puntuaje;
+		return puntuacion;
 	}
 	
 	public void setPuntuaje(int puntuaje) {
-		this.puntuaje = puntuaje;
+		this.puntuacion = puntuaje;
 	}
 
 	public int getPuntosFuerza() {

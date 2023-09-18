@@ -1,4 +1,4 @@
-package evInicial;
+ package evInicial;
 
 import java.util.Random;
 
@@ -28,6 +28,8 @@ public class Batalla {
 				nuevaVidaP2 = p2.getPuntosVida();
 				System.out.println("El jugador 2 se ha tomado una poción, +10 de vida. "+nuevaVidaP2+"PV");
 			}
+			
+			p1.
 		}
 		
 		if (nuevaVidaP1 > nuevaVidaP2)
@@ -47,5 +49,5 @@ public class Batalla {
 		
 		return golpe;
 	}
-	
+
 }
