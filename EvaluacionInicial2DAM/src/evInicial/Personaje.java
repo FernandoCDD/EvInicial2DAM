@@ -1,28 +1,25 @@
 package evInicial;
 
-public class Personaje {
+public class Personaje implements IHabilidad{
 
 	private String nombre;
 	private int puntosVida;
 	private int puntuaje;
 	private int elementosMochila;
 	private String [] mochila;
-	
+	private int puntosFuerza;
 	
 	public Personaje() {
 		super();
 	}
 
 
-	public Personaje(String nombre, int puntosVida, int puntuaje, int elementosMochila, String[] mochila) {
+	public Personaje(String nombre) {
 		super();
 		this.nombre = nombre;
 		this.puntosVida = 100;
 		this.puntuaje = 0;
-		this.elementosMochila = elementosMochila;
-		this.mochila = mochila;
 	}
-
 
 	public String getNombre() {
 		return nombre;
@@ -47,12 +44,18 @@ public class Personaje {
 	public int getPuntuaje() {
 		return puntuaje;
 	}
-
-
+	
 	public void setPuntuaje(int puntuaje) {
 		this.puntuaje = puntuaje;
 	}
 
+	public int getPuntosFuerza() {
+		return puntosFuerza;
+	}
+
+	public void setPuntosFuerza(int puntosFuerza) {
+		this.puntosFuerza = puntosFuerza;
+	}
 
 	public int getElementosMochila() {
 		return elementosMochila;
@@ -104,3 +107,5 @@ public class Personaje {
 	}
 	
 }
+
+
